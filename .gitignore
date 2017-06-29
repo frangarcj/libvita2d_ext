@@ -1,0 +1,7 @@
+*.a
+*.o
+*.elf
+*.velf
+*.vpk
+*.bin
+*.sfo
