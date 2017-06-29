@@ -26,7 +26,7 @@ void vita2d_free_shader(vita2d_shader* shader);
 void vita2d_set_shader(const vita2d_shader *shader);
 void vita2d_set_wvp_uniform(const vita2d_shader *shader, float *matrix);
 void vita2d_set_vertex_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length);
-void vita2d_set_texture_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length);
+void vita2d_set_fragment_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length);
 void vita2d_draw_texture_part_scale_rotate_generic(const vita2d_texture *texture, float x, float y,
 	float tex_x, float tex_y, float tex_w, float tex_h, float x_scale, float y_scale, float rad);
 

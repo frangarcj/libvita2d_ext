@@ -21,7 +21,7 @@ void vita2d_set_wvp_uniform(const vita2d_shader *shader, float *matrix)
 	sceGxmSetUniformDataF(vertex_wvp_buffer, shader->wvpParam, 0, 16, matrix);
 }
 
-void vita2d_set_texture_vertex_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length)
+void vita2d_set_vertex_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length)
 {
 	void *vertex_wvp_buffer;
 	const SceGxmProgram *program = sceGxmVertexProgramGetProgram(shader->vertexProgram);
@@ -30,7 +30,7 @@ void vita2d_set_texture_vertex_uniform(const vita2d_shader *shader, const char *
 	sceGxmSetUniformDataF(vertex_wvp_buffer, program_parameter, 0, length, value);
 }
 
-void vita2d_set_texture_fragment_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length)
+void vita2d_set_fragment_uniform(const vita2d_shader *shader, const char * param, const float *value, unsigned int length)
 {
 	void *fragment_wvp_buffer;
 	const SceGxmProgram *program = sceGxmFragmentProgramGetProgram(shader->fragmentProgram);
